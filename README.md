@@ -6,7 +6,7 @@ configured using doctrine query builder.
 
 This setup don't have focus on architecture and then we can say that is a generic repo for project that can become maybe a little large. But depends.
 
-# Start
+## Start
 First you need to install composer on your machine or docker.
 
 If you being used docker run the command bellow:
@@ -28,3 +28,13 @@ Dependencies that I always used are:
 - Optimization (for build SEO)
 
 And much more micro frameworks
+
+## Features
+Tasks in process.
+
+- [ ] configure doctrine for mysql and maybe postgres drive
+- [ ] configure template engine
+- [ ] add pre-commit
+- [ ] add scrutinizer to continuos integration
+- [ ] finish configuration of slim
+- [ ] create a simple project for test
