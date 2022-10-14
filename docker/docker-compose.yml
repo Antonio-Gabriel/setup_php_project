@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: setup-app
+    restart: always
+    working_dir: /var/www
+    volumes:
+      - ../public:/var/www
+  
+  nginx:
+    image: nginx:1.19-alpine
+    container_name: setup-nginx
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ../public:/var/www
+      - ./nginx:/etc/nginx/conf.d
