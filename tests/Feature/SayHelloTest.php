@@ -4,5 +4,5 @@ it('should be say hello', function () {
 
     $message = "hello";
     
-    $this->assertEquals($message, "let's move on");
+    $this->assertEquals($message, "hello");
 });
