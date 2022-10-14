@@ -28,7 +28,8 @@
         "test": "./vendor/bin/pest"
     },
     "require-dev": {
-        "pestphp/pest": "^1.22"
+        "pestphp/pest": "^1.22",
+        "captainhook/captainhook": "^4.0"
     },
     "config": {
         "allow-plugins": {
