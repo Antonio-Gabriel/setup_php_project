@@ -1,0 +1,38 @@
+{
+    "name": "vendor/setup",
+    "description": "setup of php project with seo and tests",
+    "keywords": [
+        "seo", "google", "bing", "webmaster", "helper",
+        "title", "description", "keywords", "metas", "tags", "twitter", "opengraph", "og"
+    ],
+    "authors": [
+        {
+            "name":     "António Gabriel",
+            "email":    "antoniocamposgabrielc@gmail.com",
+            "homepage": "https://github.com/Antonio-Gabriel",
+            "role":     "Developer"
+        }
+    ],
+    "license": "MTI",
+    "autoload": {
+        "psr-4": {
+            "Setup\\": "src/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "vlucas/phpdotenv": "^5.4",
+        "slim/slim": "3.*"
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.22"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
