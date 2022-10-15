@@ -3,6 +3,9 @@
 require __DIR__ . '/../bin/php_sapi.php';
 require __DIR__ . '/../vendor/autoload.php';
 
+// load env file
+require __DIR__ . '/../bin/bootstrap.php';
+
 session_start();
 
 use Slim\App;
