@@ -6,7 +6,7 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/resources/views/',
+            'template_path' => __DIR__ . '/Resources/Views/',
         ],
 
         // Monolog settings
