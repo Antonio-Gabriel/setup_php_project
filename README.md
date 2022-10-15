@@ -10,6 +10,7 @@ This setup don't have focus on architecture and then we can say that is a generi
 First you need to install composer on your machine or docker.
 
 If you being used docker run the command bellow:
+
 ```bash
 docker-compose up -d
 
@@ -17,7 +18,12 @@ docker-compose up -d
 
 sudo docker-compose up -d
 ```
-If not, you only need to copy the dir to your `htdocs` directory:
+If not, you only need to copy the dir to your `htdocs` directory and start the server:
+
+```bash
+composer install
+composer server
+```
 
 ## Dependencies
 Dependencies that I always used are:
@@ -30,11 +36,13 @@ Dependencies that I always used are:
 And much more micro frameworks
 
 ## Features
-Tasks in process.
+Tasks in process and done.
 
 - [ ] configure doctrine for mysql and maybe postgres drive
-- [ ] configure template engine
-- [ ] add pre-commit
+- [x] configure template engine
+- [x] add pre-commit
 - [ ] add scrutinizer to continuos integration
-- [ ] finish configuration of slim
-- [ ] create a simple project for test
+- [x] finish configuration of slim
+- [x] create a simple project for test
+- [x] configure render view page
+- [x] configure containers of slim
